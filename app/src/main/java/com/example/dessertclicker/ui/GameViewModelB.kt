@@ -3,13 +3,12 @@ package com.example.dessertclicker.ui
 import androidx.lifecycle.ViewModel
 import com.example.dessertclicker.data.Datasource.dessertList
 import com.example.dessertclicker.data.GameUIState
-import com.example.dessertclicker.model.Dessert
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 
-class GameViewModel : ViewModel() {
+class GameViewModelB : ViewModel() {
     private val _uiState = MutableStateFlow(GameUIState())
     val uiState: StateFlow<GameUIState> = _uiState.asStateFlow()
 
@@ -18,7 +17,7 @@ class GameViewModel : ViewModel() {
      */
     fun onDessertClicked() {
         _uiState.update {
-            currentUIState ->
+                currentUIState ->
             val nextDessertId = determineDessertIndex(currentUIState.dessertsSold)
             currentUIState.copy(
                 revenue = currentUIState.revenue + currentUIState.currentDessertPrice,

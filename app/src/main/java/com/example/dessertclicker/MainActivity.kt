@@ -70,7 +70,8 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.dessertclicker.data.GameUIState
-import com.example.dessertclicker.ui.GameViewModel
+import com.example.dessertclicker.ui.GameViewModelA
+import com.example.dessertclicker.ui.GameViewModelB
 import com.example.dessertclicker.ui.theme.DessertClickerTheme
 
 // Tag for logging
@@ -89,9 +90,8 @@ class MainActivity : ComponentActivity() {
                         .fillMaxSize()
                         .statusBarsPadding(),
                 ) {
-                    val factory = ViewModelProvider.NewInstanceFactory()
-                    val viewModelA: GameViewModel = viewModel(factory = factory)
-                    val viewModelB: GameViewModel = viewModel(factory = factory)
+                    val viewModelA: GameViewModelA = viewModel()
+                    val viewModelB: GameViewModelB = viewModel()
                     val uiStateA by viewModelA.uiState.collectAsState()
                     val uiStateB by viewModelB.uiState.collectAsState()
                     DessertClickerApp(
