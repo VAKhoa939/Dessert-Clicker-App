@@ -74,6 +74,14 @@ import com.example.dessertclicker.ui.GameViewModelA
 import com.example.dessertclicker.ui.GameViewModelB
 import com.example.dessertclicker.ui.theme.DessertClickerTheme
 
+/*
+* Name: Võ Anh Khoa
+* ID: 21110046
+* Class: 02FIE - Tuesday Afternoon
+* Date: 11/3/2025
+* Assignment 1: Create an interactive Dice Roller app
+* */
+
 // Tag for logging
 private const val TAG = "MainActivity"
 
