@@ -2,7 +2,7 @@
 * ID: 21110046
 * Class: 02FIE - Tuesday Afternoon
 * Date: 11/3/2025
-* Assignment 1: Create an interactive Dice Roller app
+* Assignment 1: Create a Dessert Clicker app
 ------------
 
 Dessert Clicker app
