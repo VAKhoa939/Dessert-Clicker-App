@@ -67,7 +67,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.content.ContextCompat
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.dessertclicker.data.GameUIState
 import com.example.dessertclicker.ui.GameViewModelA
@@ -79,7 +78,7 @@ import com.example.dessertclicker.ui.theme.DessertClickerTheme
 * ID: 21110046
 * Class: 02FIE - Tuesday Afternoon
 * Date: 11/3/2025
-* Assignment 1: Create an interactive Dice Roller app
+* Assignment 3: Create a Dessert Clicker app
 * */
 
 // Tag for logging
